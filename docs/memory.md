@@ -25,7 +25,6 @@ Pylon is a cloud-based AI application builder. It generates production-ready CLI
 - **Development Scope:** Ephemeral sandbox (Fly.io) and cloud storage (R2) moved to future scope. Focus is local filesystem persistence for MVP.
 
 ## Next Planned Actions
-- Implement Supabase JWT authentication middleware.
 - Build local filesystem storage adapter.
 - Implement the AI Gateway with provider adapters.
 - Build local execution sandbox system.
