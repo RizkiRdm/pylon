@@ -12,3 +12,4 @@
 - **[2026-05-06T16:15:00Z]**: Fixed critical bugs (Rate Limiter crash, Auth bypass, UUID validation).
 - **[2026-05-06T16:30:00Z]**: Committed and pushed structural changes to `main`.
 - **[2026-05-06T16:45:00Z]**: Initialized `docs/memory.md` and `docs/project_log.md`.
+- **[2026-05-06T15:47:15Z]**: Updated development scope: Fly.io and R2 moved to future scope; focusing on local FS persistence for MVP.

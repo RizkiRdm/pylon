@@ -22,9 +22,10 @@ Pylon is a cloud-based AI application builder. It generates production-ready CLI
 - **Fail-Open Rate Limiting:** If Redis is down, the API remains available but logs errors to prevent system-wide outages.
 - **Repository Pattern:** Enforced at the package level (`packages/db`) to comply with strict dependency direction rules.
 - **UUID Validation:** All path parameters for database IDs must be validated as UUIDs at the API boundary.
+- **Development Scope:** Ephemeral sandbox (Fly.io) and cloud storage (R2) moved to future scope. Focus is local filesystem persistence for MVP.
 
 ## Next Planned Actions
 - Implement Supabase JWT authentication middleware.
-- Setup Cloudflare R2 storage package (`packages/storage`).
+- Build local filesystem storage adapter.
 - Implement the AI Gateway with provider adapters.
-- Build the Ephemeral Sandbox System (Fly.io integration).
+- Build local execution sandbox system.
