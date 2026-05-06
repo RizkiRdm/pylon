@@ -30,17 +30,8 @@ app.get('/health', (c) => {
   });
 });
 
-// Protected Routes - Apply Auth and Rate Limiting
-app.use('*', async (c, next) => {
-  if (c.req.path === '/api/v1/health') return await next();
-  return auth(c, next);
-});
-app.use('*', async (c, next) => {
-  if (c.req.path === '/api/v1/health') return await next();
-  return rateLimiter(c, next);
-});
-
-// Routes
+// Protected Routes
+const protectedRoutes = app.use('*', auth, rateLimiter);
 app.route('/api-keys', apiKeysRoutes);
 
 // Error handling
