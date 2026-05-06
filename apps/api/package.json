@@ -11,14 +11,15 @@
     "test": "bun test"
   },
   "dependencies": {
-    "hono": "^4.3.7",
     "@hono/zod-validator": "^0.2.1",
-    "zod": "^3.23.8",
-    "pino": "^9.1.0",
-    "cors": "^2.8.5",
-    "@pylon/db": "workspace:*",
     "@pylon/crypto": "workspace:*",
-    "@pylon/queue": "workspace:*"
+    "@pylon/db": "workspace:*",
+    "@pylon/queue": "workspace:*",
+    "cors": "^2.8.5",
+    "hono": "^4.3.7",
+    "jose": "^6.2.3",
+    "pino": "^9.1.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
