@@ -1,0 +1,13 @@
+{
+  "name": "@pylon/agent-core",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "dependencies": {
+    "@pylon/ai-gateway": "workspace:*",
+    "@pylon/memory-system": "workspace:*",
+    "@pylon/db": "workspace:*",
+    "@pylon/queue": "workspace:*",
+    "zod": "^3.23.8"
+  }
+}

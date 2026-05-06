@@ -1,0 +1,28 @@
+{
+  "name": "api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "build": "bun build ./src/index.ts --outdir ./dist",
+    "start": "bun run src/index.ts",
+    "lint": "eslint .",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "hono": "^4.3.7",
+    "@hono/zod-validator": "^0.2.1",
+    "zod": "^3.23.8",
+    "pino": "^9.1.0",
+    "cors": "^2.8.5",
+    "@pylon/db": "workspace:*",
+    "@pylon/crypto": "workspace:*",
+    "@pylon/queue": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "typescript": "^5.4.5",
+    "pino-pretty": "^11.1.0"
+  }
+}
